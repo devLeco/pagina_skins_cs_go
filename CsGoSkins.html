@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Cs Go Skins</title>
+    <meta charset="UTF-8">
+    <script src="skins.js"></script>
+    <link rel="stylesheet" type="text/css" href="skins.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="imgheader" src="img/csgoheader1.jpg" alt="skins cs go">
+        <nav>
+            <div class="menutopo">
+                <ul>
+                    <li>
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#FAQ">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="#Sobre">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="coluna.esquerda">
+            <div class="card">
+                <h2>Escolha sua Skin para a AK-47 logo abaixo</h2>
+                <select id="skin" onChange="selectAk()">
+                    <option value="wastelandRebel">Wasteland Rebel</option>
+                    <option value="asiimov">Asiimov</option>
+                    <option value="fuelInjector">Fuel Injector</option>
+                    <option value="neonRevolution">Neon Revolution</option>
+                    <option value="neonRider">Neon Rider</option>
+                    <option value="theEmpress">The Empress</option>
+                    <option value="bloodSport">BloodSport</option>
+                </select>
+                <div>
+                    <img id="produto" class="imgak47" src=img/ak47-wasteland_rebel.png alt="Ak47">
+                </div>
+                <p id="valorAk"></p>
+            </div>
+        </div>
+        <div class="coluna.meio">
+            <div class="card">
+                <h2>Escolha a skin da sua faca</h2>
+                <select id="skinF" onChange="selectFaca()">
+                    <option value="tigerTooth">Tiger Tooth</option>
+                    <option value="doppler">Doppler</option>
+                    <option value="marbleFade">Marble Fade</option>
+                </select>
+                <div>
+                    <img id="faca" class="imgak47" src=img/tigertooth.png alt="facas cs go">
+                </div>
+                <p id="valorF"></p>
+            </div>
+        </div>
+        <aside class="coluna.direita">
+            <div class="card">
+                <h2>Suas compras tem um valor de:</h2>
+                <input type="button" onclick="calculaValorFinal()" value="comprar">
+                <p id="precoFinal"></p>
+            </div>
+        </aside>
+    </div>
+    </div>
+    <footer class="rodape">
+        <h2>Bacharelado em Sistemas de Informação </h2>
+        <h3>UNIRIO</h3>
+    </footer>
+</body>
